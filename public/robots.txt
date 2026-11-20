@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# Robôs de IA: permitidos para que a Kuarion Labs possa ser citada em respostas.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://kuarionlabs.com/sitemap.xml

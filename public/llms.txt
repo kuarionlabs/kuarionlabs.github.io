@@ -1,0 +1,19 @@
+# Kuarion Labs
+
+> A Kuarion Labs faz desenvolvimento de software e de sistemas sob medida (sites, aplicativos e plataformas), aplica inteligência artificial para automatizar tarefas e oferece cursos de programação e IA. Atendimento 100% remoto, para qualquer lugar, inclusive Presidente Prudente e Curitiba.
+
+## Serviços
+
+- Desenvolvimento de software e sistemas sob medida: sites, sistemas, aplicativos e plataformas completos, do zero ao ar.
+- IA aplicada: automação de tarefas repetitivas e assistentes integrados aos sistemas da empresa.
+- Aulas e cursos de programação e IA, para equipes e para quem quer começar em tecnologia.
+
+## Como funciona
+
+Conversa para entender o problema, desenho da solução, entregas em etapas e acompanhamento após o lançamento.
+
+## Contato
+
+- Site: https://kuarionlabs.com/
+- E-mail: contato@kuarionlabs.com
+- Instagram: https://www.instagram.com/kuarionlabs/
