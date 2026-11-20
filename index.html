@@ -109,18 +109,71 @@
         color: #f2f1ee;
         font-family: system-ui, sans-serif;
       }
-      main.fallback {
-        max-width: 720px;
-        margin: 0 auto;
-        padding: 64px 24px;
-        line-height: 1.5;
+      /* Tela de abertura: já aparece no primeiro quadro e é trocada pela cortina do React. */
+      .boot {
+        position: fixed;
+        inset: 0;
+        z-index: 99;
+        display: grid;
+        place-items: center;
+        background: #0b0b0c;
       }
-      main.fallback a {
-        color: #e8821a;
+      .boot svg {
+        height: 64px;
+        width: auto;
+      }
+      /* Texto base para buscadores e robôs de IA: fica no HTML, mas sem aparecer antes do React. */
+      main.fallback {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
       }
     </style>
+    <noscript>
+      <style>
+        .boot {
+          display: none;
+        }
+        main.fallback {
+          position: static;
+          width: auto;
+          height: auto;
+          max-width: 720px;
+          margin: 0 auto;
+          padding: 64px 24px;
+          overflow: visible;
+          clip: auto;
+          white-space: normal;
+          line-height: 1.5;
+        }
+        main.fallback a {
+          color: #e8821a;
+        }
+      </style>
+    </noscript>
   </head>
   <body>
+    <div class="boot" id="boot" aria-hidden="true">
+      <svg viewBox="22 18 90 92">
+        <g
+          fill="#F2F1EE"
+          stroke="#F2F1EE"
+          stroke-width="4"
+          stroke-linejoin="round"
+          transform="translate(-7 0)"
+        >
+          <rect x="26" y="22" width="18" height="84" />
+          <polygon points="51,60 77,60 108,24 86,24" />
+          <polygon points="51,68 77,68 108,104 86,104" />
+        </g>
+        <circle cx="90" cy="64" r="10" fill="#E8821A" />
+      </svg>
+    </div>
     <div id="root">
       <!-- Conteúdo base para quem não executa JavaScript (robôs de busca e de IA). O React o substitui. -->
       <main class="fallback">
