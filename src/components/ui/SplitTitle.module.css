@@ -1,0 +1,12 @@
+.word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding: 0 0.03em 0.16em;
+  margin-bottom: -0.16em;
+}
+
+.inner {
+  display: inline-block;
+  will-change: transform;
+}
