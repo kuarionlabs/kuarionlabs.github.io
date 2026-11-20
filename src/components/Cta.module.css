@@ -1,0 +1,26 @@
+.cta {
+  text-align: center;
+}
+
+.title {
+  max-width: 900px;
+  margin: 0 auto 36px;
+  font-size: clamp(40px, 7.4vw, 108px);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+
+.button {
+  padding: 20px 38px;
+  font-size: 18px;
+}
+
+.note {
+  margin: 22px 0 0;
+  color: var(--muted);
+}
+
+.note a:hover {
+  color: var(--ink);
+}

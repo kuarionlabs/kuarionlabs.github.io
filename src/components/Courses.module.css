@@ -1,0 +1,31 @@
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: clamp(28px, 5vw, 60px);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: var(--surface);
+}
+
+.pill {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 6px 14px;
+  border: 1px solid var(--sun);
+  border-radius: 999px;
+  font: 12px var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sun);
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 52px);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.055em;
+}

@@ -1,0 +1,45 @@
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 28px 0;
+  border-block: 1px solid var(--line);
+}
+
+.track {
+  display: inline-flex;
+  gap: 56px;
+  padding-right: 56px;
+  animation: slide 40s linear infinite;
+}
+
+.item {
+  display: inline-flex;
+  gap: 56px;
+}
+
+.word {
+  font-size: clamp(44px, 6.4vw, 96px);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.055em;
+  color: transparent;
+  -webkit-text-stroke: 1.3px var(--muted);
+}
+
+.dot {
+  align-self: center;
+  font-style: normal;
+  color: var(--sun);
+}
+
+@keyframes slide {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+  }
+}
