@@ -2,7 +2,8 @@
   position: relative;
   display: grid;
   align-items: center;
-  min-height: calc(100svh - 64px);
+  /* O teto evita que o hero estique sem limite quando o robô de busca usa uma janela altíssima. */
+  min-height: min(calc(100svh - 64px), 900px);
   padding: 30px 0 60px;
 }
 

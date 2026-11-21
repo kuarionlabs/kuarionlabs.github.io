@@ -1,7 +1,7 @@
 .panel {
   position: relative;
   width: 100%;
-  max-height: 70vh;
+  max-height: min(70vh, 640px);
   aspect-ratio: 1;
   margin: 0 auto;
   overflow: hidden;
