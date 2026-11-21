@@ -1,11 +1,12 @@
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
+import { IS_CRAWLER } from "../lib/motion";
 import { Logo } from "./Logo";
 import styles from "./Curtain.module.css";
 
 /** Cortina de abertura: cobre a página com o logo e sobe revelando o conteúdo. */
 export function Curtain() {
-  const [done, setDone] = useState(false);
+  const [done, setDone] = useState(IS_CRAWLER);
 
   // Remove a tela de abertura estática do HTML: esta cortina assume no mesmo lugar, sem piscar.
   useEffect(() => {

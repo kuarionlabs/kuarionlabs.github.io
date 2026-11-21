@@ -1,6 +1,6 @@
 import { motion, type Variants } from "motion/react";
 import { Fragment } from "react";
-import { EASE } from "../../lib/motion";
+import { EASE, IS_CRAWLER } from "../../lib/motion";
 import styles from "./SplitTitle.module.css";
 
 interface SplitTitleProps {
@@ -36,7 +36,7 @@ export function SplitTitle({
     : { whileInView: "show", viewport: { amount: 0.4 } };
 
   return (
-    <Tag className={className} variants={parent} initial="hidden" aria-label={text} {...trigger}>
+    <Tag className={className} variants={parent} initial={IS_CRAWLER ? "show" : "hidden"} aria-label={text} {...trigger}>
       {text.split(" ").map((word, i) => (
         <Fragment key={`${word}-${i}`}>
           {i > 0 && " "}
